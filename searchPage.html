@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="jquery-searchPage.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script type="text/javascript" src="paginate.js"></script>
+		<script type="text/javascript" src="exif.js"></script>
+		<script type="text/javascript" src="jquery-searchPage.js"></script>
+		<script type="text/javascript">
+			var schresults = [
+				{title:"Operating System", summary:"Operating System solved", url:"www.solution.com"},
+				{title:"Operating System", summary:"Operating System solved", url:"www.solution.com"},
+				{title:"Operating System", summary:"Operating System solved", url:"www.solution.com"},
+				{title:"Operating System", summary:"Operating System solved", url:"www.solution.com"},
+				{title:"Operating System", summary:"Operating System solved", url:"www.solution.com"},
+				{title:"UPS", summary:"UPS solved hehe", url:"www.solution.com"},
+				{title:"UPS", summary:"UPS solved hehe", url:"www.solution.com"},
+				{title:"UPS", summary:"UPS solved hehe", url:"www.solution.com"},
+				{title:"UPS", summary:"UPS solved hehe", url:"www.solution.com"},
+				{title:"UPS", summary:"UPS solved hehe", url:"www.solution.com"}
+			];
+
+			$(function() {
+				$('body').searchPage({
+					bgimage: 'img_parallax.jpg',
+					results: schresults,
+					caption: true,
+					leftmenu: {'Hello':'#','Hi':'#'},
+					rightmenu: {'Sign out':'http://www.google.com'},
+            		perpage: 3
+				});
+			});
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

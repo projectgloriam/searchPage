@@ -1,0 +1,254 @@
+html,body{
+	margin: 0;
+}
+
+.bg {
+	position: relative;
+	width: 100%;
+
+    /* Full height */
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    padding: 0;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#bgcover {
+    position: fixed; /* Sit on top of the page content */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0;
+    background: -webkit-linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0)); /* Standard syntax */
+    /*background-color: rgba(0,0,0,0.5);*/ /* Black background with opacity */
+    z-index: 1; /* Specify a stack order in case you're using a different order for other elements */
+}
+
+/* Top left text */
+.top-left {
+    top: 8%;
+    left: 16px;
+}
+
+/* Centered image text */
+.centered {
+    top: 40%;
+    left: 30%;
+}
+
+.caption {
+  position: absolute;
+  overflow: hidden;
+  color: white;
+  background-color: rgba(0,0,0,0.2);
+  font: 14px/normal Arial,Helvetica,Sans-Serif;
+  width: auto;
+  padding: 2px;
+  height:16px;
+  transition: .5s ease;
+  z-index: 3; /* Specify a stack order in case you're using a different order for other elements */
+}
+
+.caption:hover {
+  background-color: rgba(0,0,0,0.4); /* Black background with opacity */
+  height: auto;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;} 
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    /*border: 1px solid red;*/
+} 
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+
+
+.cf:before, .cf:after{
+    content:"";
+    display:table;
+}
+ 
+.cf:after{
+    clear:both;
+}
+ 
+.cf{
+    zoom:1;
+}    
+
+ /* Form wrapper styling */
+.search-wrapper {
+	width: 455px;
+	margin: 45px auto 50px auto;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, .4) inset, 0 1px 0 rgba(255, 255, 255, .2);
+}
+ 
+/* Form text input */
+ 
+.search-wrapper input {
+	width: 400px;
+	height: 21px;
+	padding: 10px 5px;
+	float: left;
+	border: 0;
+	background: #fff;
+	outline: 0;
+}
+
+/* Form submit button */
+.search-wrapper button {
+	overflow: visible;
+	position: relative;
+	float: right;
+	border: 0;
+	padding: 0;
+	height: 41px;
+	width: 45px;
+	background-image: url("button.png");
+	background-size: 41px 45px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+
+#searchbox {
+  position: absolute;
+  left: 0;
+  top: 45%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  z-index: 4;
+}
+
+.top-menu {
+  position: absolute;
+  top: 1%;
+  width: auto;
+  color: white;
+  z-index: 3;  
+  list-style-type: none;
+  font: 14px/normal Arial,Helvetica,Sans-Serif;
+  padding: 0;
+}
+
+.top-menu li {
+	display: inline;
+}
+
+.top-menu li a {
+	text-decoration: none;
+	color: white;
+}
+
+.top-menu-left {
+  left: 0;
+}
+
+.top-menu-left li {
+  padding-left: 40px;
+}
+
+.top-menu-right {
+  right: 0;
+}
+
+.top-menu-right li {
+  padding-right: 40px;
+}
+
+
+/*search results*/
+
+#resultsgohere{
+  list-style: none;
+  font: 13px/normal Arial,Helvetica,Sans-Serif;
+}
+
+#resultsgohere li{
+  padding: 12px 20px 0;
+}
+
+#resultsgohere cite{
+  color: #006d21;
+}
+
+#resultsgohere a{
+  text-decoration: none;
+}
+
+#resultsgohere p{
+  color: #666;
+}
+
+/*for pagination css*/
+
+.center {
+    text-align: center;
+}
+
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
